@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="candidate_names">
+        <item>Hillary Clinton</item>
+        <item>Donald Trump</item>
+        <item>Jill Stein</item>
+        <item>Gary Johnson</item>
+    </string-array>
+
+    <string-array name="candidate_parties">
+        <item>Democrat</item>
+        <item>Republican</item>
+        <item>Green</item>
+        <item>Libertarian</item>
+    </string-array>
+
+    <string-array name="policy_categories">
+        <item>Social Policy</item>
+        <item>Economic Policy</item>
+        <item>Foreign Policy</item>
+    </string-array>
+
+    <string-array name="social_policy_questions">
+        <item>Same sex marriage should be legal.</item>
+        <item>The Black Lives Matter movement has raised important issues
+        that need to be addressed.</item>
+        <item>Abortion destroys an innocent life and should be illegal in all cases.</item>
+        <item>The large amounts of money involved in elections is nothing short of corruption.</item>
+        <item>More gun control measures only prevents law abiding citizens from
+        protecting themselves.</item>
+        <item>Marijuana is dangerous and should be illegal.</item>
+        <item>Obamacare is a failure and must be repealed.</item>
+        <item>Climate change is real and must be dealt with decisively.</item>
+    </string-array>
+
+    <string-array name="economic_policy_questions">
+        <item>The richest Americans do not pay their fair share of taxes.</item>
+        <item>High corporate taxes hinders economic growth.</item>
+        <item>Minimum wage is too low and must be raised to $15 per hour.</item>
+        <item>Wall Street should be subjected to more regulation to prevent
+        another recession.</item>
+        <item>Government investment in higher education has caused the massive increases
+        in the cost of college.</item>
+        <item>Social Security must be protected and not be privatized.</item>
+    </string-array>
+
+    <string-array name="foreign_policy_question">
+        <item>ISIL is a major threat and must be dealt with immediately.</item>
+        <item>We need to do our part in taking in more refugees.</item>
+        <item>The neclear deal with Iran prevented a war with Iran.</item>
+        <item>Israel is our ally and we must protect them.</item>
+        <item>Granting amnesty to illegal aliens only encourages
+        their illegal behavoir.</item>
+        <item>We need a stronger military to protect our interests.</item>
+    </string-array>
+
+
+    <integer-array name="clinton_social_answers">
+        <item>2</item> <!--Same sex marriage -->
+        <item>1</item> <!--black lives matter -->
+        <item>-1</item> <!--abortion -->
+        <item>1</item> <!--money in politics -->
+        <item>-2</item> <!--guns -->
+        <item>-1</item> <!-- illegal drugs -->
+        <item>-1</item> <!-- health care -->
+        <item>1</item> <!-- climate change -->
+    </integer-array>
+
+    <integer-array name="clinton_economic_answers">
+        <item>1</item> <!-- income taxes -->
+        <item>0</item> <!-- corporate taxes -->
+        <item>1</item> <!-- minimum wage -->
+        <item>1</item> <!-- wall street reform -->
+        <item>-1</item> <!-- higher education -->
+        <item>1</item> <!-- social security -->
+    </integer-array>
+
+    <integer-array name="clinton_foreign_answers">
+        <item>1</item> <!-- fighting isil -->
+        <item>1</item> <!-- refugee crisis -->
+        <item>1</item> <!-- iran nuclear deal -->
+        <item>0</item> <!-- israel -->
+        <item>-1</item> <!-- immigration -->
+        <item>1</item> <!-- size of the military -->
+    </integer-array>
+
+    <integer-array name="trump_social_answers">
+        <item>0</item> <!--Same sex marriage -->
+        <item>-2</item> <!--black lives matter -->
+        <item>1</item> <!--abortion -->
+        <item>1</item> <!--money in politics -->
+        <item>2</item> <!--guns -->
+        <item>0</item> <!-- illegal drugs -->
+        <item>2</item> <!-- health care -->
+        <item>-1</item> <!-- climate change -->
+    </integer-array>
+
+    <integer-array name="trump_economic_answers">
+        <item>-1</item> <!-- income taxes -->
+        <item>2</item> <!-- corporate taxes -->
+        <item>0</item> <!-- minimum wage -->
+        <item>-1</item> <!-- wall street reform -->
+        <item>0</item> <!-- higher education -->
+        <item>0</item> <!-- social security -->
+    </integer-array>
+
+    <integer-array name="trump_foreign_answers">
+        <item>2</item> <!-- fighting isil -->
+        <item>-2</item> <!-- refugee crisis -->
+        <item>-2</item> <!-- iran nuclear deal -->
+        <item>2</item> <!-- israel -->
+        <item>2</item> <!-- immigration -->
+        <item>2</item> <!-- size of the military -->
+    </integer-array>
+
+    <integer-array name="stein_social_answers">
+        <item>2</item> <!--Same sex marriage -->
+        <item>2</item> <!--black lives matter -->
+        <item>-2</item> <!--abortion -->
+        <item>2</item> <!--money in politics -->
+        <item>-2</item> <!--guns -->
+        <item>-2</item> <!-- illegal drugs -->
+        <item>-2</item> <!-- health care -->
+        <item>2</item> <!-- climate change -->
+    </integer-array>
+
+    <integer-array name="stein_economic_answers">
+        <item>2</item> <!-- income taxes -->
+        <item>-1</item> <!-- corporate taxes -->
+        <item>2</item> <!-- minimum wage -->
+        <item>2</item> <!-- wall street reform -->
+        <item>-2</item> <!-- higher education -->
+        <item>2</item> <!-- social security -->
+    </integer-array>
+
+    <integer-array name="stein_foreign_answers">
+        <item>-2</item> <!-- fighting isil -->
+        <item>2</item> <!-- refugee crisis -->
+        <item>2</item> <!-- iran nuclear deal -->
+        <item>-2</item> <!-- israel -->
+        <item>-2</item> <!-- immigration -->
+        <item>-2</item> <!-- size of the military -->
+    </integer-array>
+
+    <integer-array name="johnson_social_answers">
+        <item>1</item> <!--Same sex marriage -->
+        <item>0</item> <!--black lives matter -->
+        <item>-1</item> <!--abortion -->
+        <item>-2</item> <!--money in politics -->
+        <item>2</item> <!--guns -->
+        <item>-2</item> <!-- illegal drugs -->
+        <item>2</item> <!-- health care -->
+        <item>1</item> <!-- climate change -->
+    </integer-array>
+
+    <integer-array name="johnson_economic_answers">
+        <item>-1</item> <!-- income taxes -->
+        <item>2</item> <!-- corporate taxes -->
+        <item>-1</item> <!-- minimum wage -->
+        <item>-2</item> <!-- wall street reform -->
+        <item>2</item> <!-- higher education -->
+        <item>-2</item> <!-- social security -->
+    </integer-array>
+
+    <integer-array name="johnson_foreign_answers">
+        <item>-1</item> <!-- fighting isil -->
+        <item>0</item> <!-- refugee crisis -->
+        <item>1</item> <!-- iran nuclear deal -->
+        <item>0</item> <!-- israel -->
+        <item>-1</item> <!-- immigration -->
+        <item>-1</item> <!-- size of the military -->
+    </integer-array>
+
+</resources>

@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">How To Vote</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="meet_the_candidates">Meet The Candidates</string>
+    <string name="take_the_quiz">Take The Quiz</string>
+
+    <string name="background">Background</string>
+    <string name="issues">Issues</string>
+    <string name="image_license">About the image</string>
+
+    <string name="s_agree">Strongly\nAgree</string>
+    <string name="neutral">\nNeutral</string>
+    <string name="s_disagree">Strongly\nDisagree</string>
+
+    <string name="clinton_background">
+        Party: Democrat\nExperience:
+        \n\tSecretary of State
+        \n\tUS Senator from New York
+    </string>
+    <string name="clinton_beliefs">
+        Pro same sex marriage
+        \nPro black lives matter
+        \nPro choice
+        \nPro gun control
+    </string>
+    <string name="clinton_image_cc">
+        This image was taken by Lorie Shaul and is used under the CC BY-SA 2.0 license.
+        \n\nThe original image can be found here: https://www.flickr.com/photos/number7cloud/25334207534/in/photostream/
+    </string>
+
+    <string name="trump_background">
+        Party: Republican
+        \nExperience:
+        \n\tBusinessman
+    </string>
+    <string name="trump_beliefs">
+        Pro Israel
+        \nPro guns
+        \nWants to fight ISIL
+    </string>
+    <string name="trump_image_cc">
+        This image was taken by Gage Skidmore and is used under the CC BY-SA 2.0 license.
+        \n\nThe original image can be found here: https://www.flickr.com/photos/22007612@N05/27151694053
+    </string>
+
+    <string name="stein_background">
+        Party: Green
+        \nExperience:
+        \n\tPhysician
+    </string>
+    <string name="stein_beliefs">
+        Protect the environment
+        \nBreak up big banks
+        \nPro LGBT
+    </string>
+    <string name="stein_image_cc">
+        This image was taken by Paul Stein and is used under the CC BY-SA 2.0 license.
+        \n\nThe original image can be found here: https://www.flickr.com/photos/kapkap/7999998562/in/album-72157631548186414/
+    </string>
+
+    <string name="johnson_background">
+        Party: Libertarian
+        \nExperience:
+        \n\tGovernor of New Mexico
+    </string>
+    <string name="johnson_beliefs">
+        Consumption tax replaces all other taxes
+        \nPro guns
+        \nAgainst warrantless wiretapping
+    </string>
+    <string name="johnson_image_cc">
+        This image was taken by Gage Skidmore and is used under the CC BY-SA 3.0 license.
+        \n\nThe original image can be found here: https://commons.wikimedia.org/wiki/File:Gary_Johnson_by_Gage_Skidmore_4.jpg
+    </string>
+
+</resources>
