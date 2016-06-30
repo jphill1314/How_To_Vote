@@ -1,8 +1,11 @@
 package com.example.jphil.how_to_vote;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.TextView;
@@ -19,6 +22,12 @@ public class QuizResultsActivity extends AppCompatActivity {
     public final static String SOCIAL_KEY = "social";
     public final static String ECON_KEY = "econ";
     public final static String FOREIGN_KEY = "foreign";
+
+    public static final String SHARED_PREFS = "quiz";
+    public static final String FIRST = "first";
+    public static final String SECOND = "second";
+    public static final String THIRD = "third";
+    public static final String FOUR = "four";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +46,14 @@ public class QuizResultsActivity extends AppCompatActivity {
 
         initAnswerArrays();
         calculateResults();
+
+        RecyclerView rv = (RecyclerView) findViewById(R.id.recycler_view);
+        QuizResultsAdapter adapter = new QuizResultsAdapter(this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+
+        rv.setHasFixedSize(true);
+        rv.setLayoutManager(layoutManager);
+        rv.setAdapter(adapter);
     }
 
     private void initAnswerArrays(){
@@ -114,40 +131,27 @@ public class QuizResultsActivity extends AppCompatActivity {
             vJohnson[3] = 100 - ((vJohnson[3] / maxDiff) * 100);
         }
 
-        String[][] results = new String[4][3];
+        String[][] results = new String[4][2];
 
         results[0][0] = (int)vClinton[3] + "";
         results[0][1] = "Hillary Clinton";
-        results[0][2] = "Democrat";
 
         results[1][0] = (int)vTrump[3] + "";
         results[1][1] = "Donald Trump";
-        results[1][2] = "Republican";
 
         results[2][0] = (int)vStein[3] + "";
         results[2][1] = "Jill Stein";
-        results[2][2] = "Green";
 
         results[3][0] = (int)vJohnson[3] + "";
         results[3][1] = "Gary Johnson";
-        results[3][2] = "Libertarian";
 
         results = sortResults(results);
 
-        ((TextView)findViewById(R.id.percent1_agree)).setText(results[0][0]);
-        ((TextView)findViewById(R.id.percent2_agree)).setText(results[1][0]);
-        ((TextView)findViewById(R.id.percent3_agree)).setText(results[2][0]);
-        ((TextView)findViewById(R.id.percent4_agree)).setText(results[3][0]);
-
-        ((TextView)findViewById(R.id.candidate1_name)).setText(results[0][1]);
-        ((TextView)findViewById(R.id.candidate2_name)).setText(results[1][1]);
-        ((TextView)findViewById(R.id.candidate3_name)).setText(results[2][1]);
-        ((TextView)findViewById(R.id.candidate4_name)).setText(results[3][1]);
-
-        ((TextView)findViewById(R.id.candidate1_party)).setText(results[0][2]);
-        ((TextView)findViewById(R.id.candidate2_party)).setText(results[1][2]);
-        ((TextView)findViewById(R.id.candidate3_party)).setText(results[2][2]);
-        ((TextView)findViewById(R.id.candidate4_party)).setText(results[3][2]);
+        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, 0);
+        prefs.edit().putString(FIRST, results[0][0] + "|" + results[0][1]).commit();
+        prefs.edit().putString(SECOND, results[1][0] + "|" + results[1][1]).commit();
+        prefs.edit().putString(THIRD, results[2][0] + "|" + results[2][1]).commit();
+        prefs.edit().putString(FOUR, results[3][0] + "|" + results[3][1]).commit();
     }
 
     private double calculateDistance(int[] a1, int[] a2){
@@ -170,12 +174,10 @@ public class QuizResultsActivity extends AppCompatActivity {
             int max = -1;
             int maxI = -1;
             String can = "";
-            String party = "";
             for(int y = 0; y < unsorted.length; y++){
                 if(Integer.parseInt(unsorted[y][0]) > max){
                     max = Integer.parseInt(unsorted[y][0]);
                     can = unsorted[y][1];
-                    party = unsorted[y][2];
                     maxI = y;
                 }
             }
@@ -183,7 +185,6 @@ public class QuizResultsActivity extends AppCompatActivity {
             unsorted[maxI][0] = "-1";
             sorted[x][0] = max + "%";
             sorted[x][1] = can;
-            sorted[x][2] = party;
         }
 
         return sorted;
