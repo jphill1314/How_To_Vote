@@ -53,7 +53,7 @@ public class QuizResultsAdapter extends RecyclerView.Adapter<QuizResultsAdapter.
     private String[] getData(String data){
         String[] result = new String[2];
         int index = data.indexOf("|");
-        
+
         result[0] = data.substring(0, index);
         result[1] = data.substring(index+1);
 

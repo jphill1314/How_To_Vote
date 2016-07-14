@@ -172,4 +172,83 @@
         <item>-1</item> <!-- size of the military -->
     </integer-array>
 
+
+    <string-array name="clinton_issues">
+        <item>Addition and substance use</item>
+        <item>Treating autism</item>
+        <item>Campaign finance reform</item>
+        <item>Ending campus sexual assault</item>
+        <item>Fighting climate change</item>
+        <item>Criminal justice reform</item>
+        <item>Disability rights</item>
+        <item>Early childhood education</item>
+        <item>Fixing America\'s infrastructure</item>
+        <item>Gun violence prevention</item>
+        <item>Affordable health care</item>
+        <item>Fighting HIV and AIDS</item>
+        <item>Immigration reform</item>
+        <item>K-12 Education</item>
+        <item>Labor and workers\' rights</item>
+        <item>LGBT rights and equality</item>
+        <item>Making college affordable</item>
+        <item>Manufacturing jobs</item>
+        <item>National security</item>
+        <item>Paid family leave</item>
+        <item>Protecting animals and wildlife</item>
+        <item>Racial justice</item>
+        <item>Raising incomes and fighting inequality</item>
+        <item>Rural communities</item>
+        <item>Seeking a cure for Alzheimer\'s disease</item>
+        <item>Small business</item>
+        <item>Social Security and Medicare</item>
+        <item>Supporting veterans</item>
+        <item>Expanding voting rights</item>
+        <item>Wall Street reform</item>
+        <item>Women\'s rights</item>
+        <item>Workforce skills and job training</item>
+    </string-array>
+
+    <string-array name="trump_issues">
+        <item>Pay for the wall</item>
+        <item>Healthcare reform</item>
+        <item>U.S.-China trade reform</item>
+        <item>Veterans administration reform</item>
+        <item>Tax reform</item>
+        <item>Second amendment rights</item>
+        <item>Immigration reform</item>
+    </string-array>
+
+    <string-array name="stein_issues">
+        <item>Climate action</item>
+        <item>Jobs as a right</item>
+        <item>Support for labor</item>
+        <item>End poverty</item>
+        <item>Health care as a right</item>
+        <item>Education as a right</item>
+        <item>A just economy</item>
+        <item>Freedom and Equality</item>
+        <item>Criminal justice reform</item>
+        <item>Justice for all</item>
+        <item>Peace and Human Rights</item>
+        <item>Empower the people</item>
+        <item>A Humane federal budget with fair taxes</item>
+        <item>Financial reform</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="johnson_issues">
+        <item>Ending wasteful spending</item>
+        <item>Fixing our tax code, and cutting taxes</item>
+        <item>Term limits</item>
+        <item>Creating jobs for all Americans</item>
+        <item>Personal freedom</item>
+        <item>Foreign Policy and National Defense</item>
+        <item>Immigration</item>
+        <item>Criminal Justice Reform</item>
+        <item>Internet freedom and security</item>
+        <item>Environment</item>
+        <item>Education</item>
+        <item>Abortion</item>
+        <item>The War on Drugs</item>
+    </string-array>
 </resources>
