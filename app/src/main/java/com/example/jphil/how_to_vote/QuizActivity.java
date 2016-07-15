@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 public class QuizActivity extends AppCompatActivity {
 
-    String[] questions, policyCat;
+    String[] questions, policyCat, examples;
     int questionNum, policyNum, totalQs;
     int[] sAns, eAns, fAns;
 
     Toolbar tb;
     RadioButton nButton, saButton, aButton, dButton, sdButton;
-    TextView tvQuestion;
+    TextView tvQuestion, tvExample;
     FloatingActionButton fabPrev;
 
     @Override
@@ -42,6 +42,7 @@ public class QuizActivity extends AppCompatActivity {
         sdButton = (RadioButton) findViewById(R.id.s_disagree);
 
         tvQuestion = (TextView) findViewById(R.id.question);
+        tvExample = (TextView) findViewById(R.id.examples_textview);
 
         fabPrev = (FloatingActionButton) findViewById(R.id.fab_prev);
 
@@ -58,18 +59,21 @@ public class QuizActivity extends AppCompatActivity {
         switch (cat){
             case "Social Policy":
                 questions = getResources().getStringArray(R.array.social_policy_questions);
+                examples = getResources().getStringArray(R.array.social_policy_examples);
                 if(sAns == null){
                     sAns = initAnswers(questions.length);
                 }
                 break;
             case "Economic Policy":
                 questions = getResources().getStringArray(R.array.economic_policy_questions);
+                examples = getResources().getStringArray(R.array.economic_policy_examples);
                 if(eAns == null){
                     eAns = initAnswers(questions.length);
                 }
                 break;
             case "Foreign Policy":
                 questions = getResources().getStringArray(R.array.foreign_policy_question);
+                examples = getResources().getStringArray(R.array.foreign_policy_examples);
                 if(fAns == null){
                     fAns = initAnswers(questions.length);
                 }
@@ -142,6 +146,7 @@ public class QuizActivity extends AppCompatActivity {
     private void loadNextQuestion(){
         if(questionNum < totalQs - 1) {
             tvQuestion.setText(questions[++questionNum]);
+            tvExample.setText(examples[questionNum]);
         }
         else{
             if(policyNum < policyCat.length - 1) {
@@ -195,6 +200,7 @@ public class QuizActivity extends AppCompatActivity {
     private void loadPreviousQuestion(){
         if(questionNum > 0){
             tvQuestion.setText(questions[--questionNum]);
+            tvExample.setText(examples[questionNum]);
 
             if(questionNum == 0 && policyNum == 0){
                 fabPrev.setVisibility(View.GONE);

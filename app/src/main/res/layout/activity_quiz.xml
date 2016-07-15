@@ -49,6 +49,7 @@
     </RelativeLayout>
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/agree_disagree"
@@ -92,6 +93,15 @@
             android:onClick="onRadioButtonClicked"/>
 
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/examples_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="25dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_prev"

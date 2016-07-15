@@ -46,15 +46,143 @@
     </string-array>
 
     <string-array name="foreign_policy_question">
-        <item>ISIL is a major threat and must be dealt with immediately.</item>
+        <item>We should formally declare war on ISIL</item>
         <item>We need to do our part in taking in more refugees.</item>
-        <item>The neclear deal with Iran prevented a war with Iran.</item>
+        <item>The nuclear deal with Iran prevented a war with Iran.</item>
         <item>Israel is our ally and we must protect them.</item>
         <item>Granting amnesty to illegal aliens only encourages
-        their illegal behavoir.</item>
+        their illegal behavior.</item>
         <item>We need a stronger military to protect our interests.</item>
     </string-array>
 
+    <string-array name="social_policy_examples">
+        <item>
+            Strongly Agree: Same sex marriage should be legal and LGBT people need their other rights protected as well
+            \nAgree: Same sex marriage should be legal
+            \nDisagree: Create something with the same legal effects as marriage, but call it something else
+            \nStrongly Disagree: Same sex marriage should not be legal in any way
+        </item> <!--Same sex marriage -->
+        <item>
+            Strongly Agree: They have raised important issues and we must go further with our criminal justice system reforms.
+            \nAgree: They have raised important issues that need to be addressed
+            \nDisagree: No, All Lives Matter
+            \nStrongly Disagree: Black Lives Matter is an inherently racist movement trying to protect criminals
+        </item> <!--black lives matter -->
+        <item>
+            Strongly Agree: Abortion destroys an innocent life and should be illegal in all cases
+            \nAgree: There should be exceptions for rape, incest, and threats to the mother’s life
+            \nDisagree: Abortion should be legal in most cases
+            \nStrongly Disagree: Abortion should be legal in all cases
+        </item> <!--abortion -->
+        <item>
+            Strongly Agree: Yes, and we must move to publicly funding campaigns
+            \nAgree: The large amounts of money involved in elections is nothing short of corruption
+            \nDisagree: One should be able to spend their money however they see fit
+            \nStrongly Disagree: Donation limits to campaigns limit free speech and should be removed
+        </item> <!--money in politics -->
+        <item>
+            Strongly Agree: Gun control measures are already too extreme and need to be relaxed
+            \nAgree: More gun control measures only prevents law abiding citizens from protecting themselves
+            \nDisagree: We need to prevent criminals and terrorists from being able to purchase guns
+            \nStrongly Disagree: We need to decrease the number of guns in our country
+        </item> <!--guns -->
+        <item>
+            Strongly Agree: We need harsher penalties for drug use
+            \nAgree: Marijuana is dangerous and should be illegal
+            \nDisagree: Marijuana should be decriminalized
+            \nStrongly Disagree: Marijuana (and other currently illegal drugs) should be legalized
+        </item> <!-- illegal drugs -->
+        <item>
+            Strongly Agree: Obamacare is not just a failure, but also unconstitutional
+            \nAgree: Obamacare is a failure and must be repealed
+            \nDisagree: Obamacare has been a good start to health care reform and we should build upon it
+            \nStrongly Disagree: We need to go further than Obamacare and offer single-payer health care
+        </item> <!-- health care -->
+        <item>
+            Strongly Agree: Climate change is real and we are not moving fast enough to stop it
+            \nAgree: Climate change is real and our current rate of action is good enough
+            \nDisagree: Climate change is real, but we have other issues that are more important to address
+            \nStrongly Disagree: Climate change is not real
+        </item> <!-- climate change -->
+    </string-array>
+
+    <string-array name="economic_policy_examples">
+        <item>
+            Strongly Agree: We need significantly higher taxes on the rich
+            \nAgree: We need should slightly raise taxes on the rich
+            \nDisagree: Taxes for the rich should be lowered to create jobs
+            \nStrongly Disagree: Taxes for everyone should be lowered
+        </item> <!-- income taxes -->
+        <item>
+            Strongly Agree: Yes and we should instead tax consumption
+            \nAgree: Yes and we should cut the corporate tax rate
+            \nDisagree: The corporate tax rate is good where it is
+            \nStrongly Disagree: We need higher taxes on corporations
+        </item> <!-- corporate taxes -->
+        <item>
+            Strongly Agree: Yes, it should be raised $15 per hour
+            \nAgree: Yes, it should be raised to $12 per hour
+            \nDisagree: The current minimum wage is good where it is
+            \nStrongly Disagree: The current minimum wage destroys jobs and needs to be reduced or abolished
+        </item> <!-- minimum wage -->
+        <item>
+            Strongly Agree: We need more regulation of not only Wall Street, but also banks
+            \nAgree: We should strengthen and enforce our current regulations
+            \nDisagree: We already have enough regulation of Wall Street
+            \nStrongly Disagree: We need to roll back the regulation of Wall Street
+        </item> <!-- wall street reform -->
+        <item>
+            Strongly Agree: We also need to remove the excessive regulations imposed on schools
+            \nAgree: The federal government should not be giving loans for college education
+            \nDisagree: We should invest more in vocational schools
+            \nStrongly Disagree: We should pay for everyone to get a college education
+        </item> <!-- higher education -->
+        <item>
+            Strongly Agree: We also need to expand Social Security benefits
+            \nAgree: Social Security must be protected
+            \nDisagree: We should allow people to instead invest their own money
+            \nStrongly Disagree: Social Security is a Ponzi Scheme that needs to be abolished
+        </item> <!-- social security -->
+    </string-array>
+
+    <string-array name="foreign_policy_examples">
+        <item>
+            Strongly Agree: We are at war with radical Islam and we should treat it as such
+            \nAgree: We should increase our presence in the Middle East through funding the groups currently fighting ISIL
+            \nDisagree: We should focus more on preventing domestic terrorism
+            \nStrongly Disagree: We need to pull back from the Middle East before we create even more instability
+        </item> <!-- fighting isil -->
+        <item>
+            Strongly Agree: We should be taking in even more refugees
+            \nAgree: We are currently taking in enough refugees
+            \nDisagree: We should not accept any more refugees from the Middle East
+            \nStrongly Disagree: We should not accept any refugees
+        </item> <!-- refugee crisis -->
+        <item>
+            Strongly Agree: The Iran nuclear deal was a very good agreement
+            \nAgree: The Iran nuclear deal was not perfect, but it at least prevented another war in the Middle East
+            \nDisagree: We gave up too much in the Iran nuclear deal
+            \nStrongly Disagree: We should void the Iran nuclear deal
+        </item> <!-- iran nuclear deal -->
+        <item>
+            Strongly Agree: We should support our ally in all of their international conflicts
+            \nAgree: We should support Israel and a two state solution to their conflict with Palestine
+            \nDisagree: We should only support Israel through the UN
+            \nStrongly Disagree: We should not support Israel due to their illegal treatment of Palestine
+        </item> <!-- israel -->
+        <item>
+            Strongly Agree: We need to deport all illegal aliens and prevent more from entering
+            \nAgree: We can allow illegal aliens to stay as guest workers and commit to protecting the border
+            \nDisagree: We should give amnesty to illegal aliens and a pathway to citizenship and commit to protecting the border
+            \nStrongly Disagree: We should give amnesty to illegal aliens, a pathway to citizenship, and make it easier for more people to legally move to the US
+        </item> <!-- immigration -->
+        <item>
+            Strongly Agree: We must be prepared for any threat that currently faces us as well as any future threats
+            \nAgree: The current size of the military is good
+            \nDisagree: We should focus more on taking care of our veterans
+            \nStrongly Disagree: We need to reduce the size of the military
+        </item> <!-- size of the military -->
+    </string-array>
 
     <integer-array name="clinton_social_answers">
         <item>2</item> <!--Same sex marriage -->
@@ -93,16 +221,16 @@
         <item>2</item> <!--guns -->
         <item>0</item> <!-- illegal drugs -->
         <item>2</item> <!-- health care -->
-        <item>-1</item> <!-- climate change -->
+        <item>-2</item> <!-- climate change -->
     </integer-array>
 
     <integer-array name="trump_economic_answers">
         <item>-1</item> <!-- income taxes -->
-        <item>2</item> <!-- corporate taxes -->
+        <item>1</item> <!-- corporate taxes -->
         <item>0</item> <!-- minimum wage -->
         <item>-1</item> <!-- wall street reform -->
         <item>0</item> <!-- higher education -->
-        <item>0</item> <!-- social security -->
+        <item>-1</item> <!-- social security -->
     </integer-array>
 
     <integer-array name="trump_foreign_answers">
@@ -151,7 +279,7 @@
         <item>2</item> <!--guns -->
         <item>-2</item> <!-- illegal drugs -->
         <item>2</item> <!-- health care -->
-        <item>1</item> <!-- climate change -->
+        <item>-1</item> <!-- climate change -->
     </integer-array>
 
     <integer-array name="johnson_economic_answers">
@@ -210,7 +338,7 @@
 
     <string-array name="trump_issues">
         <item>Pay for the wall</item>
-        <item>Healthcare reform</item>
+        <item>Health care reform</item>
         <item>U.S.-China trade reform</item>
         <item>Veterans administration reform</item>
         <item>Tax reform</item>
