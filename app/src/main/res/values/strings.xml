@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">How To Vote</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="compare_activity">Compare Results</string>
 
     <string name="meet_the_candidates">Meet The Candidates</string>
     <string name="take_the_quiz">Take The Quiz</string>

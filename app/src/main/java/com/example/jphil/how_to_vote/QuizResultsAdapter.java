@@ -1,6 +1,7 @@
 package com.example.jphil.how_to_vote;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -48,6 +49,8 @@ public class QuizResultsAdapter extends RecyclerView.Adapter<QuizResultsAdapter.
         results[1] = getData(two);
         results[2] = getData(three);
         results[3] = getData(four);
+
+        this.context = context;
     }
 
     private String[] getData(String data){
@@ -67,7 +70,7 @@ public class QuizResultsAdapter extends RecyclerView.Adapter<QuizResultsAdapter.
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final QuizResultsAdapter.ViewHolder holder, int position) {
         holder.candidate.setText(results[position][1]);
         holder.match.setText(results[position][0]);
 
@@ -96,7 +99,14 @@ public class QuizResultsAdapter extends RecyclerView.Adapter<QuizResultsAdapter.
         holder.party.setText(p);
         holder.icon.setImageResource(image);
 
-        //TODO add onClickListener
+        holder.card.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(context, CompareResultsActivity.class);
+                i.putExtra(CompareResultsActivity.INTENT_INFO, holder.candidate.getText());
+                context.startActivity(i);
+            }
+        });
 
     }
 
